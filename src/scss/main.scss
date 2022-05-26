@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+@function weight($weight-name){
+    @return map-get($font-weight, $weight-name);
+}
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
+@mixin mobile(){
+    @media (max-width: $mobile-width){
+        @content;
+    }
+}
+
+body{
+    background: $color-primario;
+}
+
+.main {
+    @include flexCenter(row);
+    width: 80%;
+    margin: 0 auto;
+    p{
+        font-weight: weight(bold);
+        &:hover{
+            color: pink;
+        }
+    }
+
+    @include mobile{
+        flex-direction: row;
+    }
+}
