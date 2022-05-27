@@ -1,14 +1,21 @@
 import React from "react";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
+import Card from "./components/Card";
 
 function App(){
     return(
-        <div className="main">
+        <div className="">
             <Navbar />
-            <Main />
+            <Card />
         </div>
     )
 }
 
 export default App;
+
+
+/*
+
+            <Main />
+*/
