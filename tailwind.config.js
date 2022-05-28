@@ -7,6 +7,9 @@ module.exports = {
       reale: ["Raleway"]
     },
     extend: {
+      spacing: {
+        "128": "32rem",
+      },
       colors: {
         danger: "#ff5f40",
         info:{
